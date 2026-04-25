@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LaslesVPN</title>
+  <link rel="icon" type="image/png" href="./assets/img/faviconlaslesVPN.png">
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="./assets/img/Logosvg.svg" alt="LaslesVPN logo" />
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-choose"><a href="#about">About</a></li>
+          <li class="nav-choose"><a href="#features">Features</a></li>
+          <li class="nav-choose"><a href="#pricing">Pricing</a></li>
+          <li class="nav-choose"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-choose"><a href="#help">Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="signin" href="#">Sign In</a>
+        <a class="btn btn-primary" href="#">Sign Up</a>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Open menu">
+        <img src="./assets/img/Hamburger_icon.svg.png" alt="menu" />
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="about">
+      <div class="hero-left">
+        <h1 class="title">Want anything to be <br> easy with <span>LaslesVPN.</span></h1>
+        <p class="lead">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting features from us.</p>
+        <a class="btn btn-cta" href="#">Get Started</a>
+      </div>
+      <div class="hero-right">
+        <img src="./assets/img/Illustration 1svg.svg" alt="person using laptop" />
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats container">
+      <div class="stats-card">
+        <div class="stat">
+          <img class="statimg" src="./assets/img/usersvg.svg" alt="userimg">
+          <div class="90">
+            <span class="stat-num">90+</span><div class="stat-label">Users</div></div>
+          </div>
+        <div class="stat">
+          <img class="statimg" src="./assets/img/locationsvg.svg" alt="userimg">
+          <div class="90">
+            <span class="stat-num">30+</span><div class="stat-label">Locations</div></div>
+          </div>
+        <div class="stat">
+          <img class="statimg" src="./assets/img/Serversvg.svg" alt="userimg">
+          <div class="90">
+            <span class="stat-num">50+</span><div class="stat-label">Servers</div></div>
+          </div>
+      </div>
+    </section>
+
+    <!-- FEATURES --> 
+    <section class="features container" id="features">
+      <div class="features-grid">
+        
+        <!-- Картинка -->
+        <div class="feature-image">
+          <img src="./assets/img/Illustration 2svg.svg" alt="feature-image">
+        </div>
+
+        <!-- Текст -->
+        <div class="feature-content">
+          <h2>We Provide Many<br>Features You Can Use</h2>
+          <p class="muted" id="mutedtxtfeautere">
+            You can explore the features that we provide with fun and <br>
+            have their own functions each feature.
+          </p>
+          <ul class="feature-list">
+            <li class="li1">
+              <img class="gr1120" src="./assets/img/Group 1120svg.svg" alt="1120">
+              Powerfull online protection.
+            </li>
+            <li class="li1">
+              <img class="gr1120" src="./assets/img/Group 1120svg.svg" alt="1120">
+              Internet without borders.
+            </li>
+            <li class="li1">
+              <img class="gr1120" src="./assets/img/Group 1120svg.svg" alt="1120">
+              Supercharged VPN
+            </li>
+            <li class="li1">
+              <img class="gr1120" src="./assets/img/Group 1120svg.svg" alt="1120">
+              No specific time limits.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section class="multimedia container" id="media">
+      <div class="section-head">
+        <h2>Multimedia Features</h2>
+        <p class="muted">Check out our video, animations, and sound effects!</p>
+      </div>
+      
+      <div class="media-grid">
+        <div class="media-item">
+          <h3>Watch our Video</h3>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/D7SlK16o82o?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="media-item">
+          <h3>Animated GIF</h3>
+          <img src="./assets/img/img/animation.gif" alt="VPN Animation" class="gif-animation">
+        </div>
+
+        <div class="media-actions">
+          <a class="btn btn-select" href="https://uk.wikipedia.org/wiki/VPN" target="_blank">Learn about VPNs</a>
+          
+          <button class="btn btn-select" id="soundBtn">Play Sound Effect</button>
+          
+          <audio id="clickSound" src="./assets/img/sound.mp3"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LAB -->
+    <section class="interactive-lab container" id="interactive">
+      <div class="section-head">
+        <h2>Interactive Elements</h2>
+        <p class="muted">Test your knowledge, draw a sketch, and try dynamic forms!</p>
+      </div>
+      
+      <div class="canvas-section form-box">
+        <h3>Draw something</h3>
+        <div class="flex-form">
+          <div class="form-content">
+            <div class="canvas-controls">
+              <div class="control-group">
+                <button class="btn-solid tool-btn active" data-tool="brush">Brush</button>
+                <button class="btn-solid tool-btn" data-tool="fill">Fill</button>
+                <button class="btn-solid tool-btn" data-tool="eraser">Eraser</button>
+              </div>
+              <div class="control-group">
+                <input type="color" id="colorPicker" value="#F53838">
+                <input type="range" id="brushSize" min="1" max="20" value="3">
+              </div>
+              <div class="control-group">
+                <button class="btn-solid" id="undoBtn">Undo</button>
+                <button class="btn-solid" id="redoBtn">Redo</button>
+              </div>
+            </div>
+            <canvas id="drawCanvas" width="1000" height="400" class="drawing-board"></canvas>
+          </div>
+          <div class="form-footer">
+            <button class="btn-solid btn-full clear-btn" id="clearCanvasBtn">
+              <img src="./assets/img/tabler_trash.svg" alt="Trash" class="btn-icon"> Clear Canvas
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lab-grid">
+        <div class="lab-item form-box">
+          <h3>VPN Knowledge Test</h3>
+          <form id="quizForm" class="flex-form">
+            <div class="form-content">
+              <div class="question">
+                <p>1. What does VPN stand for?</p>
+                <label class="custom-label">
+                  <input type="radio" name="q1" value="wrong">
+                  <span class="custom-radio"></span> Virtual Public Node
+                </label>
+                <label class="custom-label">
+                  <input type="radio" name="q1" value="correct">
+                  <span class="custom-radio"></span> Virtual Private Network
+                </label>
+              </div>
+
+              <div class="question">
+                <p>2. Which protocol is most secure?</p>
+                <label class="custom-label">
+                  <input type="radio" name="q2" value="wrong">
+                  <span class="custom-radio"></span> PPTP
+                </label>
+                <label class="custom-label">
+                  <input type="radio" name="q2" value="correct">
+                  <span class="custom-radio"></span> OpenVPN / WireGuard
+                </label>
+              </div>
+
+              <div class="question">
+                <p>3. Select LaslesVPN features:</p>
+                <label class="custom-label">
+                  <input type="checkbox" name="q3" value="speed">
+                  <span class="custom-checkbox"></span> High Speed
+                </label>
+                <label class="custom-label">
+                  <input type="checkbox" name="q3" value="logs">
+                  <span class="custom-checkbox"></span> Traffic Logs (Spying)
+                </label>
+                <label class="custom-label">
+                  <input type="checkbox" name="q3" value="secure">
+                  <span class="custom-checkbox"></span> Encrypted Data
+                </label>
+              </div>
+            </div>
+            <div class="form-footer">
+              <button type="button" class="btn-solid btn-full" id="checkQuizBtn">Check Answers</button>
+              <p id="quizResult" class="result-msg"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="lab-item form-box">
+          <h3>Check Server Status</h3>
+          <div class="flex-form">
+            <div class="form-content">
+              <label class="form-label">Select a Region:</label>
+              
+              <div class="custom-dropdown" id="serverDropdown">
+                <div class="dropdown-trigger" id="dropdownTrigger">
+                  <div class="selected-info">
+                    <img src="./assets/img/akar-icons_globe.svg" alt="Flag" class="flag-icon" id="selectedFlag">
+                    <span id="selectedText">-- Choose Country --</span>
+                  </div>
+                  <img src="./assets/img/Frame 1311.svg" alt="Arrow" class="arrow-icon" id="dropdownArrow">
+                </div>
+                <ul class="dropdown-options" id="dropdownOptions">
+                  <li data-value="poland" data-flag="./assets/img/poland.png">Warsaw, Poland</li>
+                  <li data-value="korea" data-flag="./assets/img/south-korea.png">Seoul, South Korea</li>
+                  <li data-value="usa" data-flag="./assets/img/united-states.png">New York, USA</li>
+                  <li data-value="japan" data-flag="./assets/img/japan.png">Tokyo, Japan</li>
+                  <li data-value="germany" data-flag="./assets/img/germany.png">Berlin, Germany</li>
+                  <li data-value="uk" data-flag="./assets/img/united-kingdom.png">London, UK</li>
+                </ul>
+              </div>
+
+              <div id="dynamicEffect" class="dynamic-box hidden">
+                <p>Status: <strong id="serverStatus">...</strong></p>
+                <p>Ping: <span id="serverPing">...</span></p>
+                <p id="serverMessage" class="server-msg muted"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PLANS -->
+    <section class="plans container" id="pricing">
+      <div class="section-head">
+        <h2>Choose Your Plan</h2>
+        <p class="muted">Let's choose the package that is best for you and explore it happily and <br> cheerfully.</p>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan" data-plan="free">
+          <img class="planslogos" src="./assets/img/Freesvg.svg" alt="Free Icon">
+          <h3>Free Plan</h3>
+          <ul class="plan-features">
+            <li>
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              Unlimited Bandwidth
+            </li>
+            <li>
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              Encrypted Connection
+            </li>
+            <li>
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              No Traffic Logs
+            </li>
+            <li>
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              Works on All Devices
+            </li>
+          </ul>
+          <div class="plan-footer">
+            <div class="price"><p><strong>Free</strong></p></div>
+            <button class="btn btn-select">Select</button>
+          </div>
+        </article>
+        <article class="plan" data-plan="standard">
+          <img class="planslogos" src="./assets/img/Standardsvg.svg" alt="Standard Icon">
+          <h3>Standard Plan</h3>
+          <ul class="plan-features">
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Unlimited Bandwitch</li>
+            </div>
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Encrypted Connection</li>
+            </div>
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Yes Traffic Logs</li>
+            </div>         
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Works on All Devices</li>
+            </div>
+          </ul>
+          <div class="plan-footer">
+            <div class="price"><p><strong>$9</strong>/ mo</p></div>
+            <button class="btn btn-select">Select</button>
+          </div>
+        </article>
+
+        <article class="plan" data-plan="premium">
+          <img class="planslogos" src="./assets/img/Premiumsvg.svg" alt="Premium Icon">
+          <h3>Premium Plan</h3>
+          <ul class="plan-features">
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Unlimited Bandwitch</li>
+            </div>
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Encrypted Connection</li>
+            </div>            
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Works on All Devices</li>
+            </div>            
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Works on All Devices</li>
+            </div>
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Connect Anyware</li>
+            </div>
+            <div class="li2">
+              <img src="./assets/img/Group 1223svg.svg" alt="checked">
+              <li>Get New Features</li>
+            </div>
+          </ul>
+          <div class="plan-footer">
+            <div class="price"><p><strong>$12</strong>/ mo</p></div>
+            <button class="btn btn-select">Select</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MAP -->
+     <section class="map-cont container">
+      <div class="section-head">
+        <h2>Huge Global Network<br>of Fast VPN</h2>
+        <p class="muted" id="mutedtxt-map">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move<br>locations.</p>
+      </div>
+      <div class="map">
+        <img src="./assets/img/Huge Global.svg" alt="Huge Global Map">
+      </div>
+      <div class="platforms">
+        <img src="./assets/img/netflix1.svg" alt="Netflix">
+        <img src="./assets/img/reddit1.svg" alt="Reddit">
+        <img src="./assets/img/amazon1.svg" alt="Amazon">
+        <img src="./assets/img/discord1.svg" alt="Discord">
+        <img src="./assets/img/spotify1.svg" alt="Spotify">
+      </div>
+    </section>
+    <!-- SLIDER -->
+    <section class="trusted container" id="testimonials">
+      <div class="section-head">
+        <h2>Trusted by Thousands of<br>Happy Customer</h2>
+        <p class="muted" id="mutedtxt-testimonials">These are the stories of our customers who have joined us with great <br> pleasure when using this crazy feature.</p>
+      </div>
+      <div class="container">
+        <div class="slider-wrapper">
+        <div class="slider" id="slider">
+            <div class="slide">
+            <div class="slider-content active-slide">
+                <div class="slide-person">
+                <div class="person">
+                    <img src="./assets/img/img/Ellipse 175svg.svg" alt="avatar">
+                    <div class="information">
+                    <p class="ps name">Viezh Robert</p>
+                    <p class="ps city">Warsaw, Poland</p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="ps">4.5</div>
+                    <img src="./assets/img/img/star svg.svg" alt="rate star">
+                </div>
+                </div>
+                <div class="feedback">
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+                </div>
+            </div>
+            </div>
+            <div class="slide">
+            <div class="slider-content">
+                <div class="slide-person">
+                <div class="person">
+                    <img src="./assets/img/img/Ellipse 176svg.svg" alt="avatar">
+                    <div class="information">
+                    <p class="ps name">Yessica Christy</p>
+                    <p class="ps city">Shanxi, China</p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="ps">4.5</div>
+                    <img src="./assets/img/img/star svg.svg" alt="rate star">
+                </div>
+                </div>
+                <div class="feedback">
+                “I like it because I like to travel far and still can connect with high speed.”.
+                </div>
+            </div>
+            </div>
+            <div class="slide">
+            <div class="slider-content">
+                <div class="slide-person">
+                <div class="person">
+                    <img src="./assets/img/img/Ellipse 177svg.svg" alt="avatar">
+                    <div class="information">
+                    <p class="ps name">Kim Young Jou</p>
+                    <p class="ps city">Seoul, South Korea</p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="ps">4.5</div>
+                    <img src="./assets/img/img/star svg.svg" alt="rate star">
+                </div>
+                </div>
+                <div class="feedback">
+                “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="control-slider">
+            <div class="points" id="points">
+                <div class="point active-point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+
+            <div class="arrows">
+                <button class="arrow arrow-left" id="arrow-left"></button>
+                <button class="arrow arrow-right" id="arrow-right"></button>
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- SUBSCRIBE SECTION -->
+    <section class="subscribe container" id="help">
+      <div class="subscribe-box">
+        <div class="subscribe-text">
+          <h2>Subscribe Now for <br> Get Special Features!</h2>
+          <p>Let's subscribe with us and find the fun.</p>
+        </div>
+        <a href="#" class="btn btn-subscribe">Subscribe Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer container">
+      <div class="footer-left">
+        <a class="logo" href="#">
+          <img src="./assets/img/Logosvg.svg" alt="LaslesVPN logo" class="footer-logo"/>
+        </a>
+        <p class="muted"><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high security.</p>
+        <div class="socials">
+          <img src="./assets/img/facebook.svg" alt="Facebook">
+          <img src="./assets/img/x.svg" alt="X">
+          <img src="./assets/img/instagram.svg" alt="Instagram">
+        </div>
+        <p class="copyright">© 2026 LaslesVPN</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Server</a></li>
+            <li><a href="#">Countries</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Engage</h4>
+          <ul>
+            <li><a href="#">LaslesVPN ?</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Earn Money</h4>
+          <ul>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Become Partner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
