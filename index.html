@@ -8,16 +8,26 @@
   <link rel="stylesheet" href="scss/main.css" />
 </head>
 <body>
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#">
-        <img src="./assets/img/Logosvg.svg" alt="LaslesVPN logo" />
+        <img
+          class="logo-img"
+          src="./assets/img/Logosvg.svg"
+          data-logo-light="./assets/img/Logosvg.svg"
+          data-logo-dark=""
+          alt="LaslesVPN logo"
+        />
       </a>
 
-      <nav class="nav" id="mainNav">
+      <nav class="nav" id="mainNav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li class="nav-choose"><a href="#about">About</a></li>
           <li class="nav-choose"><a href="#features">Features</a></li>
+          <li class="nav-choose"><a href="#media">Media</a></li>
+          <li class="nav-choose"><a href="#interactive">Interactive</a></li>
           <li class="nav-choose"><a href="#pricing">Pricing</a></li>
           <li class="nav-choose"><a href="#testimonials">Testimonials</a></li>
           <li class="nav-choose"><a href="#help">Help</a></li>
@@ -25,56 +35,73 @@
       </nav>
 
       <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+          <span class="theme-toggle-label">Light</span>
+        </button>
         <a class="signin" href="#">Sign In</a>
         <a class="btn btn-primary" href="#">Sign Up</a>
       </div>
 
-      <button class="burger" id="burgerBtn" aria-label="Open menu">
-        <img src="./assets/img/Hamburger_icon.svg.png" alt="menu" />
+      <button class="burger" id="burgerBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero container" id="about">
-      <div class="hero-left">
+    <section class="hero container reveal-section" id="about">
+      <div class="hero-left" data-tilt>
         <h1 class="title">Want anything to be <br> easy with <span>LaslesVPN.</span></h1>
         <p class="lead">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting features from us.</p>
-        <a class="btn btn-cta" href="#">Get Started</a>
+        <div class="hero-actions">
+          <a class="btn btn-cta" href="#pricing">Get Started</a>
+          <a class="btn btn-secondary" href="#features">Explore Features</a>
+        </div>
       </div>
-      <div class="hero-right">
+      <div class="hero-right floating-card" data-tilt>
         <img src="./assets/img/Illustration 1svg.svg" alt="person using laptop" />
       </div>
     </section>
 
     <!-- STATS -->
-    <section class="stats container">
-      <div class="stats-card">
+    <section class="stats container reveal-section">
+      <div class="stats-card" data-tilt>
         <div class="stat">
-          <img class="statimg" src="./assets/img/usersvg.svg" alt="userimg">
-          <div class="90">
+          <div class="statimg-wrap" aria-hidden="true">
+            <img src="./assets/img/usersvg.svg" alt="">
+          </div>
+          <div class="stat-meta">
             <span class="stat-num">90+</span><div class="stat-label">Users</div></div>
           </div>
         <div class="stat">
-          <img class="statimg" src="./assets/img/locationsvg.svg" alt="userimg">
-          <div class="90">
+          <div class="statimg-wrap" aria-hidden="true">
+            <img src="./assets/img/locationsvg.svg" alt="">
+          </div>
+          <div class="stat-meta">
             <span class="stat-num">30+</span><div class="stat-label">Locations</div></div>
           </div>
         <div class="stat">
-          <img class="statimg" src="./assets/img/Serversvg.svg" alt="userimg">
-          <div class="90">
+          <div class="statimg-wrap" aria-hidden="true">
+            <img src="./assets/img/Serversvg.svg" alt="">
+          </div>
+          <div class="stat-meta">
             <span class="stat-num">50+</span><div class="stat-label">Servers</div></div>
           </div>
       </div>
     </section>
 
     <!-- FEATURES --> 
-    <section class="features container" id="features">
+    <section class="features container reveal-section" id="features">
       <div class="features-grid">
         
         <!-- Картинка -->
-        <div class="feature-image">
+        <div class="feature-image" data-tilt>
           <img src="./assets/img/Illustration 2svg.svg" alt="feature-image">
         </div>
 
@@ -109,19 +136,19 @@
     </section>
 
     <!-- MULTIMEDIA -->
-    <section class="multimedia container" id="media">
+    <section class="multimedia container reveal-section" id="media">
       <div class="section-head">
         <h2>Multimedia Features</h2>
         <p class="muted">Check out our video, animations, and sound effects!</p>
       </div>
       
       <div class="media-grid">
-        <div class="media-item">
+        <div class="media-item" data-tilt>
           <h3>Watch our Video</h3>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/D7SlK16o82o?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="media-item">
+        <div class="media-item" data-tilt>
           <h3>Animated GIF</h3>
           <img src="./assets/img/img/animation.gif" alt="VPN Animation" class="gif-animation">
         </div>
@@ -137,13 +164,13 @@
     </section>
 
     <!-- INTERACTIVE LAB -->
-    <section class="interactive-lab container" id="interactive">
+    <section class="interactive-lab container reveal-section" id="interactive">
       <div class="section-head">
         <h2>Interactive Elements</h2>
         <p class="muted">Test your knowledge, draw a sketch, and try dynamic forms!</p>
       </div>
       
-      <div class="canvas-section form-box">
+      <div class="canvas-section form-box" data-tilt>
         <h3>Draw something</h3>
         <div class="flex-form">
           <div class="form-content">
@@ -173,7 +200,7 @@
       </div>
 
       <div class="lab-grid">
-        <div class="lab-item form-box">
+        <div class="lab-item form-box" data-tilt>
           <h3>VPN Knowledge Test</h3>
           <form id="quizForm" class="flex-form">
             <div class="form-content">
@@ -224,7 +251,7 @@
           </form>
         </div>
 
-        <div class="lab-item form-box">
+        <div class="lab-item form-box" data-tilt>
           <h3>Check Server Status</h3>
           <div class="flex-form">
             <div class="form-content">
@@ -260,14 +287,14 @@
     </section>
     
     <!-- PLANS -->
-    <section class="plans container" id="pricing">
+    <section class="plans container reveal-section" id="pricing">
       <div class="section-head">
         <h2>Choose Your Plan</h2>
         <p class="muted">Let's choose the package that is best for you and explore it happily and <br> cheerfully.</p>
       </div>
 
       <div class="plans-grid">
-        <article class="plan" data-plan="free">
+        <article class="plan" data-plan="free" data-tilt>
           <img class="planslogos" src="./assets/img/Freesvg.svg" alt="Free Icon">
           <h3>Free Plan</h3>
           <ul class="plan-features">
@@ -293,7 +320,7 @@
             <button class="btn btn-select">Select</button>
           </div>
         </article>
-        <article class="plan" data-plan="standard">
+        <article class="plan" data-plan="standard" data-tilt>
           <img class="planslogos" src="./assets/img/Standardsvg.svg" alt="Standard Icon">
           <h3>Standard Plan</h3>
           <ul class="plan-features">
@@ -320,7 +347,7 @@
           </div>
         </article>
 
-        <article class="plan" data-plan="premium">
+        <article class="plan" data-plan="premium" data-tilt>
           <img class="planslogos" src="./assets/img/Premiumsvg.svg" alt="Premium Icon">
           <h3>Premium Plan</h3>
           <ul class="plan-features">
@@ -358,12 +385,12 @@
     </section>
 
     <!-- MAP -->
-     <section class="map-cont container">
+     <section class="map-cont container reveal-section">
       <div class="section-head">
         <h2>Huge Global Network<br>of Fast VPN</h2>
         <p class="muted" id="mutedtxt-map">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move<br>locations.</p>
       </div>
-      <div class="map">
+      <div class="map" data-tilt>
         <img src="./assets/img/Huge Global.svg" alt="Huge Global Map">
       </div>
       <div class="platforms">
@@ -375,7 +402,7 @@
       </div>
     </section>
     <!-- SLIDER -->
-    <section class="trusted container" id="testimonials">
+    <section class="trusted container reveal-section" id="testimonials">
       <div class="section-head">
         <h2>Trusted by Thousands of<br>Happy Customer</h2>
         <p class="muted" id="mutedtxt-testimonials">These are the stories of our customers who have joined us with great <br> pleasure when using this crazy feature.</p>
@@ -384,7 +411,7 @@
         <div class="slider-wrapper">
         <div class="slider" id="slider">
             <div class="slide">
-            <div class="slider-content active-slide">
+            <div class="slider-content active-slide" data-tilt>
                 <div class="slide-person">
                 <div class="person">
                     <img src="./assets/img/img/Ellipse 175svg.svg" alt="avatar">
@@ -404,7 +431,7 @@
             </div>
             </div>
             <div class="slide">
-            <div class="slider-content">
+            <div class="slider-content" data-tilt>
                 <div class="slide-person">
                 <div class="person">
                     <img src="./assets/img/img/Ellipse 176svg.svg" alt="avatar">
@@ -424,7 +451,7 @@
             </div>
             </div>
             <div class="slide">
-            <div class="slider-content">
+            <div class="slider-content" data-tilt>
                 <div class="slide-person">
                 <div class="person">
                     <img src="./assets/img/img/Ellipse 177svg.svg" alt="avatar">
@@ -462,8 +489,8 @@
       </div>
     </section>
     <!-- SUBSCRIBE SECTION -->
-    <section class="subscribe container" id="help">
-      <div class="subscribe-box">
+    <section class="subscribe container reveal-section" id="help">
+      <div class="subscribe-box" data-tilt>
         <div class="subscribe-text">
           <h2>Subscribe Now for <br> Get Special Features!</h2>
           <p>Let's subscribe with us and find the fun.</p>
@@ -476,16 +503,22 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="footer container">
+      <div class="footer container">
       <div class="footer-left">
         <a class="logo" href="#">
           <img src="./assets/img/Logosvg.svg" alt="LaslesVPN logo" class="footer-logo"/>
         </a>
         <p class="muted"><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high security.</p>
         <div class="socials">
-          <img src="./assets/img/facebook.svg" alt="Facebook">
-          <img src="./assets/img/x.svg" alt="X">
-          <img src="./assets/img/instagram.svg" alt="Instagram">
+          <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="./assets/img/facebook.svg" alt="Facebook">
+          </a>
+          <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <img src="./assets/img/x.svg" alt="X">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="./assets/img/instagram.svg" alt="Instagram">
+          </a>
         </div>
         <p class="copyright">© 2026 LaslesVPN</p>
       </div>
@@ -494,30 +527,30 @@
         <div class="footer-col">
           <h4>Product</h4>
           <ul>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Server</a></li>
-            <li><a href="#">Countries</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#about">Download</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#features">Locations</a></li>
+            <li><a href="#interactive">Server</a></li>
+            <li><a href="#testimonials">Countries</a></li>
+            <li><a href="#media">Blog</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Engage</h4>
           <ul>
-            <li><a href="#">LaslesVPN ?</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#help">LaslesVPN ?</a></li>
+            <li><a href="#interactive">FAQ</a></li>
+            <li><a href="#media">Tutorials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Privacy Policy</a></li>
+            <li><a href="#pricing">Terms of Service</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Earn Money</h4>
           <ul>
-            <li><a href="#">Affiliate</a></li>
-            <li><a href="#">Become Partner</a></li>
+            <li><a href="#pricing">Affiliate</a></li>
+            <li><a href="#help">Become Partner</a></li>
           </ul>
         </div>
       </div>
